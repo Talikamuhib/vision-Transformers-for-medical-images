@@ -1,26 +1,79 @@
-# Vision Transformers for Medical Images with LSA and Shift Packet Tokenization
+# 🏥 Kidney Stone Detection using Vision Transformers
 
-**Overview 🚀**
-This repository contains an implementation of Vision Transformers (ViTs) specifically designed for processing medical images. The model leverages Locally-Grouped Self-Attention, or LSA and Shift Packet Tokenization to enhance its performance on medical imaging datasets. Vision Transformers have shown remarkable success in computer vision tasks, and this project aims to adapt and optimize them for the unique characteristics of medical images.
+AI-Powered Medical Image Analysis application using Vision Transformers with YOLOv8 for kidney stone detection in CT scans and ultrasound images.
 
-Clone it! and happy coding!
+## 🚀 Features
 
+- **Real-time Detection**: Upload medical images and get instant kidney stone detection
+- **Confidence Threshold**: Adjustable confidence threshold for detection sensitivity
+- **Detailed Results**: View bounding boxes, confidence scores, and class information
+- **Export Results**: Download detection results for further analysis
+- **Modern UI**: Clean and intuitive Streamlit interface
 
-**Features 🌟**
+## 📦 Installation
 
-**Vision Transformer Architecture:** The core of the model is based on the Vision Transformer architecture, which has demonstrated state-of-the-art performance on various visual recognition tasks.
+### Local Setup
 
-**Locally-Grouped Self-Attention, or LSA:** LSA is incorporated to capture latent patterns and relationships within the medical images, enabling the model to learn more robust representations.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/vision-Transformers-for-medical-images.git
+cd vision-Transformers-for-medical-images
+```
 
-**Shift Packet Tokenization:** A novel tokenization technique, called Shift Packet Tokenization, is implemented to handle the specific challenges posed by medical image data. This technique helps the model focus on relevant image features.
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-**Preprocessing Pipeline:** The repository includes a comprehensive preprocessing pipeline tailored for medical images, ensuring that the data is appropriately prepared for input into the Vision Transformer.
+3. Run the application:
+```bash
+streamlit run app.py
+```
 
-**Training and Evaluation Scripts:** The code includes training and evaluation scripts that facilitate the training of the model on medical image datasets and the assessment of its performance.
+### Streamlit Cloud Deployment
 
-**Requirements 📋**
-Python 3.x
-PyTorch
-NumPy
-Scikit-learn
-Your preferred deep learning environment (e.g., CUDA for GPU acceleration)# vision-Transformers-for-medical-images
+1. Fork this repository
+2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
+3. Connect your GitHub account
+4. Deploy the app
+
+## 🗂️ Project Structure
+
+```
+vision-Transformers-for-medical-images/
+├── app.py                 # Main Streamlit application
+├── requirements.txt       # Python dependencies
+├── packages.txt          # System packages (for Streamlit Cloud)
+├── weights/
+│   └── best.pt           # Trained YOLOv8 model weights
+├── images/
+│   └── STONE- (15).jpg   # Sample images
+└── README.md
+```
+
+## 🔧 Model Information
+
+- **Architecture**: YOLOv8 with Vision Transformer backbone
+- **Training**: Custom trained on kidney stone CT/ultrasound dataset
+- **Input**: Medical images (JPG, PNG, BMP, WebP)
+- **Output**: Bounding boxes with confidence scores
+
+## 📊 Usage
+
+1. Open the application in your browser
+2. Upload a kidney CT scan or ultrasound image using the sidebar
+3. Adjust the confidence threshold if needed (default: 0.4)
+4. Click "Detect Kidney Stones" to analyze
+5. View results and download if needed
+
+## ⚠️ Disclaimer
+
+This tool is for **educational and research purposes only**. Always consult healthcare professionals for medical diagnosis. This application should not be used as a substitute for professional medical advice.
+
+## 📝 License
+
+MIT License
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
