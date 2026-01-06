@@ -2,6 +2,11 @@
 
 AI-Powered Medical Image Analysis application using Vision Transformers with YOLOv8 for kidney stone detection in CT scans and ultrasound images.
 
+
+# wanna have real time experience
+
+https://vision-transformers-for-medical-images-douzu6vxemaaxedffnrxrg.streamlit.app/
+
 ## 🚀 Features
 
 - **Real-time Detection**: Upload medical images and get instant kidney stone detection
@@ -33,7 +38,7 @@ streamlit run app.py
 ### Streamlit Cloud Deployment
 
 1. Fork this repository
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
+2. Go to [Streamlit Cloud]([https://streamlit.io/cloud](https://vision-transformers-for-medical-images-douzu6vxemaaxedffnrxrg.streamlit.app/))
 3. Connect your GitHub account
 4. Deploy the app
 
